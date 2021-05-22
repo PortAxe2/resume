@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<head>
+    <Title>Badih Chehab Resume</Title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="mainContainer" class="mainContainer"> 
+    <div id="sideBar" class="sideBar" >
+        <h2>Resume</h2>
+        <hr>
+        <div id="home" class="categorySelection">
+            <span class="material-icons">home</span>
+            <span class="categoryName">Home</span>
+        </div>
+        <div id="academicProj" class="categorySelection">
+            <span class="material-icons">edit</span>
+            <span class="categoryName">Academic Projects</span>
+        </div>
+        <div id="workExp" class="categorySelection">
+            <span class="material-icons">work</span>
+            <span class="categoryName">Work Experience</span>
+        </div>
+        <div id="education" class="categorySelection">
+            <span><i class="fa fa-graduation-cap"></i></span>
+            <span class="aboutMe">Education</span>
+        </div>
+        <div id="extracur" class="categorySelection">
+            <span class="material-icons"><i class="fa fa-globe" aria-hidden="true"></i></span>
+            <span class="aboutMe">Extracurricular</span>
+        </div>
+        <div id="aboutMe" class="categorySelection">
+            <span class="material-icons">person</span>
+            <span class="aboutMe">About Me</span>
+        </div>
+        <hr>
+        <!--
+        <h4 style="margin-left: 8px;">Contact Info</h4>
+        <div id="email" class="contactInfo">
+            <span class="material-icons">email</span>
+            <span class="categoryName">badihchehab@yahoo.com</span>
+        </div>
+        <div id="phone" class="contactInfo">
+            <span class="material-icons">call</span>
+            <span class="categoryName">+961 71 343 952</span>
+        </div>
+        <div id="phone" class="contactInfo">
+            <span class="material-icons">public</span>
+            <span class="categoryName">linkedin.com/in/badihchehab/</span>
+        </div>
+        -->
+    </div>
+    <div id="mainBody" class="mainBody" >
+        <div id="mainBodyHeader" class="mainBodyHeader">
+            <div id="historyControl" class="historyControl">
+                <!--
+                <div id="backButton" class="controlButton">
+                    <span class="material-icons">arrow_back_ios_new</span>
+                </div>
+                <div id="forwardButton" class="controlButton">
+                    <span class="material-icons">arrow_forward_ios_new</span>
+                </div>
+                -->
+            </div>
+            <div id="userDiv" class="userDiv">
+                <img src="./BGC_8868.JPG" alt="Profile Picture">
+                <span id="fullName">Badih Chehab</span>
+            </div>
+        </div>
+        <div id="pages">
+            <div style="display: block;" id="homeDiv" class="page page-show">
+                <img id="annoucement" class="annoucement" src="./spotifyBanner.png" alt="annoucement">
+                <div id="featuredDiv">
+                    <h1>Jump In</h1>
+                    <hr>
+                    <div class="featured">
+                        <div name="academicProj" class="feature">
+                            <img src="./academics-01-01.png" alt="">
+                            <h3>Academic Projects</h3>
+                        </div>
+                        <div name="workExp" class="feature">
+                            <img src="./workExp-01.png" alt="">
+                            <h3>Work Experience</h3>
+                        </div>
+                        <div name="education" class="feature">
+                            <img src="./education-01.png" alt="">
+                            <h3>Education</h3>
+                        </div>
+                        <div name="extracur" class="feature">
+                            <img src="./extra-01.png" alt="">
+                            <h3>Extracurricular Activities</h3>
+                        </div>
+                        <div name="aboutMe" class="feature">
+                            <img src="./person-01.png" alt="">
+                            <h3>About Me</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" id="workExpDiv" class="page page-hidden">
+                <div class="pageHeader" >
+                    <img class="pagePicture" src="./workExp-01.png" alt="">
+                    <div class="pageHeaderInfo" >
+                        <div id="userDiv" class="userDiv userDiv-playlist">
+                            <img src="./BGC_8868.JPG" alt="Profile Picture">
+                            <span id="fullName">Badih Chehab</span>
+                        </div>
+                        <h1 id="pageNameText">Work Experience</h1>
+                        <h4>PLAYLIST</h4>
+                    </div>
+                </div>
+                <div class="pageBody" >
+                    <div class="options">
+                        <div>
+                            <!--
+                            <span style="color: white;" class="material-icons">search</span>
+                            <input class="searchBar" type="text" placeholder="Type here">
+                            -->
+                        </div>
+                        <select name="sortingValue" id="sortingValue" class="sortingSelection">
+                            <option value="relevance">Relevance</option>
+                            <option value="date">Date</option>
+                            <option value="alphabetical">Alphabetical Order</option>
+                        </select>
+                    </div>
+                    <div id="workProjects" class="contentsOfPage" >
+                        
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" id="academicProjDiv" class="page page-hidden">
+                <div class="pageHeader" >
+                    <img class="pagePicture" src="./academics-01-01.png" alt="">
+                    <div class="pageHeaderInfo" >
+                        <div id="userDiv" class="userDiv userDiv-playlist">
+                            <img src="./BGC_8868.JPG" alt="Profile Picture">
+                            <span id="fullName">Badih Chehab</span>
+                        </div>
+                        <h1 id="pageNameText">Academic Projects</h1>
+                        <h4>PLAYLIST</h4>
+                    </div>
+                </div>
+                <div class="pageBody" >
+                    <div class="options">
+                        <div>
+                            <!--
+                            <span style="color: white;" class="material-icons">search</span>
+                            <input class="searchBar" type="text" placeholder="Type here">
+                            -->
+                        </div>
+                        <select name="sortingValue" id="sortingValue2" class="sortingSelection">
+                            <option value="relevance">Relevance</option>
+                            <option value="date">Date</option>
+                            <option value="alphabetical">Alphabetical Order</option>
+                        </select>
+                    </div>
+                    <div id="academicProjects" class="contentsOfPage" >
+                        
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" id="educationDiv" class="page page-hidden">
+                <div class="pageHeader" >
+                    <img class="pagePicture" src="./education-01.png" alt="">
+                    <div class="pageHeaderInfo" >
+                        <div id="userDiv" class="userDiv userDiv-playlist">
+                            <img src="./BGC_8868.JPG" alt="Profile Picture">
+                            <span id="fullName">Badih Chehab</span>
+                        </div>
+                        <h1 id="pageNameText">Education</h1>
+                        <h4>PLAYLIST</h4>
+                    </div>
+                </div>
+                <div class="educationPart">
+                    <div class="education">
+                        <h2 class="major" >BE in Computer and Communications Engineering</h2>
+                        <h2 class="school" >American University of Beirut</h2>
+                        <h4 class="yearsAttended">August 2017 - May 2021</h4>
+                        <h4 class="educationFocus">Software Systems Track</h4>
+                    </div>
+                </div>    
+                <div class="educationPart">
+                    <div class="education">
+                        <h2 class="major" >French Baccalaureate - Specialty in Physics</h2>
+                        <h2 class="school" >Lycée Franco-Libanais Verdun</h2>
+                        <h4 class="yearsAttended">September 2002 - June 2017</h4>
+                    </div>
+                </div>    
+                <div class="educationPart">
+                    <div class="education">
+                        <h2 class="major" >Summer Session</h2>
+                        <h2 class="school" >University of California, Berkeley</h2>
+                        <h4 class="yearsAttended">June 2019 - August 2019</h4>
+                    </div>
+                </div>    
+            </div>
+            <div style="display: none;" id="extracurDiv" class="page page-hidden">
+                <div class="pageHeader" >
+                    <img class="pagePicture" src="./extra-01.png" alt="">
+                    <div class="pageHeaderInfo" >
+                        <div id="userDiv" class="userDiv userDiv-playlist">
+                            <img src="./BGC_8868.JPG" alt="Profile Picture">
+                            <span id="fullName">Badih Chehab</span>
+                        </div>
+                        <h1 id="pageNameText">Extracurricular Activities</h1>
+                        <h4>PLAYLIST</h4>
+                    </div>
+                </div>
+                <div class="educationPart">
+                    <div class="education">
+                        <h2 class="major" >Marketing Officer</h2>
+                        <h2 class="school" >IEEE AUB Student Branch</h2>
+                        <h4 class="yearsAttended">September 2018 - May 2020</h4>
+                        <ul>
+                            <li>Devised marketing strategies to promote the club</li>
+                            <li>Designed graphics and edited videos</li>
+                        </ul>
+                    </div>
+                </div>      
+
+                <div class="educationPart">
+                    <div class="education">
+                        <h2 class="major" >Photography Team Officer</h2>
+                        <h2 class="school" >MSFEA Magazine - Cogs & Caffeine</h2>
+                        <h4 class="yearsAttended">January 2019 - May 2019</h4>
+                        <ul>
+                            <li>Managed and assigned tasks to the team</li>
+                            <li>Covered events and interviews</li>
+                        </ul>
+                    </div>
+                </div>      
+
+            </div>
+            <div style="display: none;" id="aboutMeDiv" class="page page-hidden">
+                <div class="user">
+                    <img src="./BGC_8868.JPG" alt="my  picture">
+                    <div class="info">
+                        <span>Badih Chehab</span><br>
+                        <span>BE in Computer and Communications Engineering</span><br>
+                        <span class="contactDetails">Email: badihchehab@yahoo.com</span>
+                        <span class="contactDetails">|</span>
+                        <span class="contactDetails">Phone: +961 71 343 952</span>
+                        <span class="contactDetails">|</span>
+                        <span class="contactDetails">Phone: +961 71 343 952</span>
+                        <br>
+                        <a href="https://www.linkedin.com/in/badihchehab/" target="_blank">
+                            <img class="linkedinLink" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG22.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="skills skills-tech">
+                    <h6>Technical</h6>
+                    <hr>
+                    <ul>
+                        <li>
+                            <div class="skill"> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+                                <span>JavaScript</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill"> 
+                                <img src="https://brandslogos.com/wp-content/uploads/images/react-logo-vector.svg" alt="">
+                                <span>React</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill"> 
+                                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="">
+                                <span>HTML</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill"> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="">
+                                <span>CSS</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill"> 
+                                <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt="">
+                                <span>Node.js</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill"> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" alt="">
+                                <span>Python</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill"> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="">
+                                <span>C++</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill"> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" alt="">
+                                <span>MongoDB</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill"> 
+                                <img src="https://mpng.subpng.com/20180526/oqt/kisspng-microsoft-sql-server-mysql-database-logo-5b098c6ebad6d7.7316225815273524307653.jpg" alt="">
+                                <span>SQL</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill"> 
+                                <img src="https://4.bp.blogspot.com/-rtNRVM3aIvI/XJX_U07Z-II/AAAAAAAAJXY/YpdOo490FTgdKOxM4qDG-2-EzcNFAWkKACK4BGAYYCw/s1600/logo%2Bfirebase%2Bicon.png" alt="">
+                                <span>Firebase</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br><br><br><br>
+                <div class="skills skills-creative">
+                    <h6>Creative</h6>
+                    <hr>
+                    <ul>
+                        <li><div class="skill"> 
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png" alt="">
+                            <span>Adobe XD</span>
+                        </div></li>
+                        <li><div class="skill"> 
+                            <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/07/adobe-illustrator-logo.png" alt="">
+                            <span>Adobe Illustrator</span>
+                        </div></li>
+                        <li><div class="skill"> 
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/1200px-Adobe_Premiere_Pro_CC_icon.svg.png" alt="">
+                            <span>Adobe Premiere</span>
+                        </div></li>
+                        <li><div class="skill"> 
+                            <img src="https://seeklogo.com/images/A/after-effects-cc-logo-BCC55BAFF7-seeklogo.com.png" alt="">
+                            <span>Adobe After Effects</span>
+                        </div></li>
+                        <li><div class="skill"> 
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/1200px-Adobe_Photoshop_Lightroom_CC_logo.svg.png" alt="">
+                            <span>Adobe Lightroom</span>
+                        </div></li>
+                        <li><div class="skill"> 
+                            <img src="https://cdn.worldvectorlogo.com/logos/photoshop-cc.svg" alt="">
+                            <span>Adobe Photoshop</span>
+                        </div></li>
+                        <li><div class="skill"> 
+                            <img src="https://icon-library.com/images/blender-3d-icon/blender-3d-icon-9.jpg" alt="">
+                            <span>Blender</span>
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>

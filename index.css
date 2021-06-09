@@ -79,6 +79,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #pageNameText {
+    font-size: 16pt;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -103,9 +106,14 @@
   .categorySelection span, .sideBar .categorySelection-selected span {
     margin-left: 12px;
   }
+  #featuredDiv {
+    margin-top: 64px;
+  }
   .feature {
+    float: left;
     background-color: #191414ab;
     width: 180px;
+    text-align: center;
   }
   .feature img {
     width: 180px;
@@ -117,6 +125,15 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  #pageNameText {
+    font-size: 50pt;
+  }
+  .page, .page-hidden, .page-show {
+    padding: 32px;
+  }
+  .pageHeaderInfo {
+    margin-left: 16px;
   }
 }
 
@@ -303,7 +320,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px;
   opacity: 1;
   overflow: scroll;
   height: 85%;
@@ -376,7 +392,6 @@ body {
 
 #pages .pageHeader .pageHeaderInfo {
   color: white;
-  margin-left: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,7 +405,6 @@ body {
 }
 
 #pages .pageHeader .pageHeaderInfo #pageNameText {
-  font-size: 50pt;
   font-weight: 1800;
   margin: 0;
 }
@@ -601,7 +615,6 @@ body {
 }
 
 #featuredDiv {
-  margin-top: 64px;
   margin-left: auto;
   margin-right: auto;
   height: -webkit-fit-content;
@@ -622,10 +635,8 @@ body {
 }
 
 #featuredDiv .featured .feature {
-  float: left;
   padding: 8px;
   border-radius: 8px;
-  text-align: center;
   height: 300px;
   margin: 8px;
   -webkit-transition: 0.2s ease-out;

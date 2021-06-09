@@ -24,6 +24,102 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #annoucement {
+    display: none;
+  }
+  .sideBar {
+    z-index: 1;
+    width: 100vw;
+    bottom: 0;
+    height: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .sideBar .categoryName, .sideBar h2, .sideBar hr {
+    display: none;
+  }
+  .mainBody {
+    margin-left: 0px;
+  }
+  .categorySelection, .sideBar .categorySelection-selected {
+    width: 100%;
+    aspect-ratio: 1/1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 2px;
+  }
+  .categorySelection span, .sideBar .categorySelection-selected span {
+    margin-left: 0px;
+  }
+  .feature {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .feature img {
+    width: 300px;
+  }
+  .feature h3 {
+    display: none;
+  }
+  .pageHeader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sideBar {
+    height: 100vh;
+    left: 0;
+    width: 170px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 16px;
+  }
+  .mainBody {
+    margin-left: 200px;
+  }
+  .categorySelection, .sideBar .categorySelection-selected {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 4px;
+  }
+  .categorySelection span, .sideBar .categorySelection-selected span {
+    margin-left: 12px;
+  }
+  .feature {
+    background-color: #191414ab;
+    width: 180px;
+  }
+  .feature img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+  }
+  .pageHeader {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -38,9 +134,6 @@ body {
 }
 
 .mainContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -48,9 +141,10 @@ body {
 }
 
 .sideBar {
-  padding: 16px;
-  height: 100%;
-  width: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
   color: white;
   background-color: black;
 }
@@ -62,6 +156,7 @@ body {
 }
 
 .sideBar .categorySelection, .sideBar .categorySelection-selected {
+  float: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,8 +164,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 4px;
-  height: 40px;
-  margin-bottom: 4px;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
 }
@@ -91,7 +184,6 @@ body {
 
 .sideBar .categorySelection span, .sideBar .categorySelection-selected span {
   vertical-align: middle;
-  margin-left: 12px;
 }
 
 .sideBar .categorySelection .categoryName, .sideBar .categorySelection-selected .categoryName {
@@ -117,8 +209,8 @@ body {
 }
 
 .mainBody {
+  padding: 16px;
   height: 100%;
-  width: 98%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#27394B), to(#121212));
   background-image: linear-gradient(to bottom, #27394B, #121212);
 }
@@ -368,7 +460,7 @@ body {
 }
 
 .educationPart {
-  width: 700px;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -413,7 +505,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1200px;
+  width: 80%;
   height: 80%;
   border-radius: 32px;
   -webkit-transition: 0.05s ease-in;
@@ -530,14 +622,11 @@ body {
 }
 
 #featuredDiv .featured .feature {
-  margin: 32px;
   float: left;
-  text-align: center;
   padding: 8px;
   border-radius: 8px;
-  background-color: #191414ab;
+  text-align: center;
   height: 300px;
-  width: 180px;
   margin: 8px;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
@@ -551,8 +640,10 @@ body {
 }
 
 #featuredDiv .featured .feature img {
-  width: 180px;
-  height: 180px;
   border-radius: 8px;
+}
+
+#featuredDiv .featured .feature h3 {
+  margin: 8px;
 }
 /*# sourceMappingURL=index.css.map */
